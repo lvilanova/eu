@@ -1,0 +1,18 @@
+{
+    "covers": [
+      {
+        "name": "Levis Blue Denim",
+        "imgPath": "img/covers/cover0.png"
+      },
+      {
+        "name": "Pepe Black Jeans",
+        "imgPath": "img/covers/cover1.png"
+      },
+      {
+        "name": "Pepe Blue Jeans",
+        "imgPath": "img/covers/cover2.png"
+      }
+    ]
+  }
+  
+  
