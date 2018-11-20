@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eugenia | Covers</title>
+    <title>Eugenia | Campaigns</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -57,16 +57,16 @@
                                         </li>
                                         <li><a href="#">EU homes<span><i class="ti-angle-down"></i></span></a>
                                             <ul>
-                                                <li><a href="shortcode-accordion.html">Home reports</a></li>
+                                                <li><a href="#">Home reports</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Fashion producers <span><i class="ti-angle-down"></i></span></a>
                                             <ul class="dropdown-show-right">
-                                                <li><a href="blog.html">Blog Default</a></li>
+                                                <li><a href="#">Blog Default</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="https://www.cabinett.com">Cabinett</a></li>
-                                        <li><a href="about-us.html">about</a></li>
+                                        <li><a href="#">about</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -128,7 +128,7 @@
                                 <h2 class="page-cat">Eugenia Campaigns</h2>
                                 <ul class="breadcrumb-list">
                                     <li><a href="index.html">Home</a></li>
-                                    <li>Eugenia Covers</li>
+                                    <li>Eugenia Campaigns</li>
                                 </ul>
                             </div>
                         </div>
@@ -155,8 +155,8 @@
                                 <li><a href="#" data-filter=".cat5">Development</a></li>
                             </ul>
                         </div>
-                        <div id="app-campaigns" class="portfolio portfolio-gutter portfolio-container portfolio-masonry portfolio-column-count-5">
-                            <div class="portfolio-item" v-for="data in images.slice(0, 10)">
+                        <div id="app-campaigns" class="portfolio portfolio-gutter portfolio-container portfolio-column-count-4">
+                            <div class="portfolio-item" v-for="data in images.slice(0, 8)">
                                 <div class="portfolio-item-content">
                                     <div class="item-thumbnail">
                                         <img :src="data.thumbnailUrl" alt="">
@@ -171,6 +171,9 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="clearfix"></div>
+
                         <div class="pagination-area">
                             <div class="load-more text-center">
                                 <a class="button" href="#">Load More</a>
@@ -214,7 +217,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
                         <aside class="instagram-widget">
-                            <h4 class="widget-title">follow us @ instagram</h4>
+                            <h4 class="widget-title">follow me @ eusilva</h4>
                             <ul id="instagram-widget"></ul>
                         </aside>
                     </div>

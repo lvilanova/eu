@@ -3,7 +3,6 @@
 Custom CSS
 
 ---------------------------------------------------------------*/
-
 .cd-headline.clip span{
   color:#fff;
 }
@@ -40,10 +39,48 @@ Custom CSS
 .container__txt-home{
   padding-top:30px;
 }
+
+.portfolio-item img{
+  min-height: 220px;
+}
+
+.item-thumbnail {
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  position: relative  
+}
+
+.placeholder:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5000;
+  transform: translate(-50%, -50%);
+  counter-increment: brick;
+  content: counter(brick);
+  transition: font-size .25s, opacity .25s ease-in-out;
+  font-weight: 700;
+  opacity: .5;
+  font-size: 1.25em;
+}
+
+.placeholder:hover:after {
+  font-size: 2.25em;
+  opacity: 1;
+}
+
+.instagram-widget li{
+  padding:0 16px!important;
+  margin-bottom:16px!important;
+}
+
 .footer-area{
   border-top:none;
   padding-top:30px;
 }
+
 /* -------------------------------------------------
   Old Desktop
 ---------------------------------------------------*/

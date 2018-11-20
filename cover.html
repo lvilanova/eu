@@ -155,9 +155,9 @@
                                 <li><a href="#" data-filter=".cat5">Development</a></li>
                             </ul>
                         </div>
-                        <div id="app-covers" class="portfolio portfolio-gutter portfolio-container portfolio-masonry portfolio-column-count-5">
-                            <div class="portfolio-item" v-for="data in images.slice(12 , 22 )">
-                                <div class="portfolio-item-content">
+                        <div id="app-covers" class="portfolio portfolio-gutter portfolio-container portfolio-column-count-4">
+                            <div class="portfolio-item" v-for="data in images.slice(12 , 20 )">
+                                <div class="portfolio-item-content placeholder">
                                     <div class="item-thumbnail">
                                         <img :src="data.thumbnailUrl" alt="">
                                     </div>
@@ -171,6 +171,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="clearfix"></div>
                         <div class="pagination-area">
                             <div class="load-more text-center">
                                 <a class="button" href="#">Load More</a>
@@ -214,7 +215,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
                         <aside class="instagram-widget">
-                            <h4 class="widget-title">follow us @ instagram</h4>
+                            <h4 class="widget-title">follow me @ eusilva</h4>
                             <ul id="instagram-widget"></ul>
                         </aside>
                     </div>
