@@ -338,6 +338,11 @@
         instaFeedFooter.run();
     }
 
+    $(".menu-collapsed").click(function() {
+        $(this).toggleClass("menu-expanded");
+        $('.container__blur').toggleClass('blur');
+      });
+
 
 
 //template: '<li><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a></li>'

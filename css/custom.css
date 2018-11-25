@@ -3,12 +3,30 @@
 Custom CSS
 
 ---------------------------------------------------------------*/
+.description__header{
+  border-bottom: 1px solid #ffffff;
+  padding-bottom:8px;
+}
+.social-header{
+  padding-top:12px;
+  list-style-type: none;
+  text-align: center;
+}
+.social-header li{
+  display: inline;
+  list-style-type: none;
+  padding-right:8px;
+}
+.social-header i{
+  color:#fff;
+}
 .cd-headline.clip span{
   color:#fff;
 }
 
 .banner-static-content p{
   color:#fff;
+  display: inline;
 }
 
 .slider-style-2{
@@ -17,6 +35,7 @@ Custom CSS
 
 .intelligent-header{
   box-shadow:none;
+  z-index:1;
 }
 
 .text__cover-home{
@@ -34,6 +53,7 @@ Custom CSS
 
 .instagram-item:hover img {
   transform: scale3d(1.05, 1.05, 1);
+  opacity:0.8;
 }
 
 .container__txt-home{
@@ -71,14 +91,17 @@ Custom CSS
   opacity: 1;
 }
 
-.instagram-widget li{
-  padding:0 16px!important;
-  margin-bottom:16px!important;
-}
-
 .footer-area{
   border-top:none;
   padding-top:30px;
+}
+
+.background{
+  background-color: rgba(0,0,0,0.25);
+}
+
+.banner-static-content h1::before{
+  background:none;;
 }
 
 /* -------------------------------------------------
@@ -88,8 +111,9 @@ Custom CSS
   .header-middle-area{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
-
+  .banner-static-content h1 {
+    font-size: 22px;
+  }
 }
 
 /* -------------------------------------------------
@@ -100,30 +124,155 @@ Custom CSS
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-
+  .cd-headline.clip .cd-words-wrapper{
+    display:inline-block;
+  }
 }
 
 /* -------------------------------------------------
   Small Mobile
 ---------------------------------------------------*/
 @media (max-width: 767px) {
-.slider-style-2{
-  background: rgba(0, 0, 0, 0) url(../img/slider/2.jpg)
-   repeat scroll center center / cover;
-}
-.header-middle-area{
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  .slider-style-2{
+    background: rgba(0, 0, 0, 0) url(../img/slider/2.jpg)
+    repeat scroll center center / cover;
+  }
+  .header-middle-area{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .instagram-widget{
+    display:block;
+    font-size:14px;
+  }
+  .widget-title{
+    display:none;
+  }
+  .header-middle-area{
+    position:fixed;
+    width: 100%;
+  }
+  .banner-static-content h1 {
+    font-size: 18px;
+  }
 }
 
-.instagram-widget{
-  display:block;
-  font-size:14px;
+/* -------------------------------------------------
+  Desktop
+---------------------------------------------------*/
+
+@media (min-width: 1281px) {
+  .instagram-widget li{
+    padding:0 16px!important;
+    margin-bottom:16px!important;
+  }
+  .meta-description__header{
+    display:inline-block;
+  }
 }
-.widget-title{
-  display:none;
+
+/* -------------------------------------------------
+  Mobile menu
+---------------------------------------------------*/
+.blur{
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
 }
-.header-middle-area{
-  position:fixed;
+
+ .bar:after, .bar:before, .bar {
+  transition: all 0.25s;
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 4px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.menu-collapsed {
+  transition: all 0.25s;
+  position: absolute;
+  right: 75px;
+  top: 35px;
+  height: 36px;
+  width: 36px;
+  z-index: 99;
+  cursor: pointer;
+}
+.menu-collapsed ul {
+  transition: all 0s;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bar:before {
+  top: -8px;
+}
+.bar:after {
+  top: 8px;
+}
+
+.b-a-expanded, .menu-expanded .bar:after, .menu-expanded .bar:before {
+  transition: all 0.15s;
+  top: 32px;
+  right:75px;
+}
+
+.menu-expanded {
+  transition: all 0.25s;
+  text-align: center;
+  height: 100%;
   width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.5);
 }
+.menu-expanded ul {
+  transition: all 0s;
+  position: relative;
+  top:60px;
+  left: 0;
+  z-index: 2;
+}
+.menu-expanded a {
+  transition: all 0.15s;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 5px;
+  color: #fff;
+  display: block;
+}
+.menu-expanded a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.15s;
+  letter-spacing: 2px;
+  color: #333;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.menu-expanded .bar {
+  background-color: transparent;
+  transition: all 0.15s;
+}
+.menu-expanded .bar:before {
+  transform: rotate(45deg);
+}
+.menu-expanded .bar:after {
+  transform: rotate(-45deg);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  color: #999;
 }
